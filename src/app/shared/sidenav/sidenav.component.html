@@ -1,0 +1,19 @@
+<mat-drawer-container class="h-100" autosize>
+    <mat-drawer class="drawer" opened="true" #drawer mode="side">
+        <div class="menu-item pointer" *ngFor="let menuItem of menuItems" [routerLink]="menuItem.path">
+            <mat-icon [fontIcon]="menuItem.icon" [color]="isActive(menuItem.path) ? 'primary': 'secondary' "></mat-icon>
+            <p>
+                {{menuItem.caption}}
+            </p>
+        </div>
+    </mat-drawer>
+    <div class="draw-content h-100">
+        <div class="content">
+            <ng-content>
+            </ng-content>
+        </div>
+        <button mat-mini-fab color="secondary" class="menu-button" (click)="drawer.toggle()">
+            <mat-icon>menu_open</mat-icon>
+        </button>
+    </div>
+</mat-drawer-container>

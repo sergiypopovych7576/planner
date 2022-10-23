@@ -1,0 +1,31 @@
+:host {
+    .drawer {
+        min-width: 8%;
+        text-align: center;
+        padding-top: .5rem;
+    }
+
+    .menu-item {
+        margin: 1rem;
+
+        mat-icon {
+            font-size: 2rem;
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+
+    .draw-content {
+        position: relative;
+
+        .content {
+            padding: 2rem 2rem 2rem 2rem;
+        }
+
+        .menu-button {
+            position: absolute;
+            bottom: 3%;
+            left: 2%;
+        }
+    }
+}

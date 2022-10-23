@@ -1,0 +1,26 @@
+<h1>
+    Budget
+</h1>
+<hr>
+{{selectedDate}}
+<div class="d-flex">
+    <div class="w-25">
+        <div class="account" *ngFor="let account of accounts">
+            <mat-card>
+                <mat-card-title>
+                    <div class="d-flex justify-between">
+                        <div>
+                            {{account.name}}
+                        </div>
+                        <div>
+                            {{account.balance}}{{account.currency}}
+                        </div>
+                    </div>
+                </mat-card-title>
+            </mat-card>
+        </div>
+    </div>
+    <div>
+        gere
+    </div>
+</div>
